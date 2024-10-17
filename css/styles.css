@@ -1,0 +1,189 @@
+:root{
+    --gris: #f5f3f3;
+    --blanco: #ffffff;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--gris);
+}
+
+/*Utilities*/
+
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+/*Header*/
+
+.header{
+    padding-top: 20px ;
+    text-align: center;
+    background-color: var(--blanco);
+    padding-bottom: 1rem;
+}
+li{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+/*SubMenu*/
+.submenu{
+    position: relative;
+}
+#carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+        right: 0;
+        display: block;
+        top: 100%;
+        position: absolute;
+        background-color: var(--blanco);
+        min-height: 400px;
+        min-width: 300px;
+        padding: 20px;
+        z-index: 1;
+
+}
+
+/*Hero*/
+
+#hero{
+    background-image: url("../src/img/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+
+}
+
+#hero h2, p{
+    color: var(--blanco);
+}
+
+.hero-content form{
+    position: relative;
+}
+.hero-content #buscador{
+    padding: 6px 10px;
+    height: 50px;
+    margin: 0;
+}
+.hero-content form #submit-buscador{
+    position: absolute;
+    background-image: url("../src/img/lupa.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 0;
+    height: 100%;
+   display: block;
+   width: 50px;
+   right: 0;
+   top: 0;
+   text-indent: -9999px;
+   border-style:none;
+   border-width: initial;
+   border-color: initial;
+   border-image: initial;
+   
+}
+
+/*Barra*/
+.barra{
+    background: linear-gradient(
+        to right, rgb(116, 29, 81) 0%, rgb(228,78,82) 100%);
+    padding: 2rem;
+    text-align: center;
+}
+
+.barra p{
+    margin: 0;
+}
+
+.icono{
+
+    padding-left: 30px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    justify-content: center;
+}
+
+.icono1{
+    background-image: url(../src/img/icono1.png);
+}
+.icono2{
+    background-image: url(../src/img/icono2.png);
+}
+.icono3{
+    background-image: url(../src/img/icono3.png);
+}
+
+
+/*Lista de Cursos*/
+
+
+#lista-cursos .title-courses{
+    margin: 3rem 0;
+}
+#lista-cursos columns{
+    margin: 0;
+}
+.card{
+    background-color: white;
+    margin-bottom: 2rem;
+}
+.card-content{
+    padding: 1rem 2rem;
+}
+
+.card-content h4{
+    font-size: 16px;
+}
+
+.card-content p{
+    color: black;
+    margin-bottom: 5px;
+}
+
+.card-content .precio{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.card-content span{
+    font-weight: 700;
+}
+
+.agregar-carrito{
+    margin-top: 10px;
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #aaa;
+
+}
+
+.footer a{
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
