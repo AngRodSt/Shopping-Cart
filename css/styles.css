@@ -58,6 +58,13 @@ ul{
         z-index: 1;
 
 }
+.borrar-curso{
+    border-radius: 100%;
+    background-color: red;
+    padding: 0.5rem 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+}
 
 /*Hero*/
 
