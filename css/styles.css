@@ -2,6 +2,13 @@
     --gris: #f5f3f3;
     --blanco: #ffffff;
 }
+.bodoni-moda-sc {
+    font-family: "Bodoni Moda SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
 
 html{
     font-size: 62.5%;
@@ -29,19 +36,33 @@ h4{
     padding-top: 20px ;
     text-align: center;
     background-color: var(--blanco);
-    padding-bottom: 1rem;
+    
+}
+
+.header .row ul{
+   
+    margin: 0;
+    
+}
+.logo-letters{
+    display: inline-block;
+
+}
+.submenu{
+    margin: 0;
 }
 li{
     text-decoration: none;
 }
 ul{
     list-style: none;
-    margin-bottom: 2rem;
+    
 }
 
 /*SubMenu*/
 .submenu{
     position: relative;
+    margin-top: 2rem;
 }
 #carrito{
     display: none;
@@ -69,14 +90,18 @@ ul{
 /*Hero*/
 
 #hero{
-    background-image: url("../src/img/hero.jpg");
+    background-image: url("../src/img/SL-103020-37400-21.jpg");
     background-repeat: no-repeat;
+   
     background-size: cover;
     min-height: 25rem;
     display: flex;
     align-items: center;
     padding: 5rem;
 
+}
+#hero h2{
+    font-size: 4rem;
 }
 
 #hero h2, p{
@@ -116,6 +141,7 @@ ul{
         to right, rgb(116, 29, 81) 0%, rgb(228,78,82) 100%);
     padding: 2rem;
     text-align: center;
+    font-weight: 400;
 }
 
 .barra p{
@@ -155,6 +181,10 @@ ul{
     background-color: white;
     margin-bottom: 2rem;
 }
+.card .portada{
+    max-height: 150px;
+    min-width: 150px;
+}
 .card-content{
     padding: 1rem 2rem;
 }
@@ -171,6 +201,7 @@ ul{
 .card-content .precio{
     font-size: 18px;
     margin-top: 10px;
+    text-decoration: line-through;
 }
 .card-content span{
     font-weight: 700;
