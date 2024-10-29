@@ -7,7 +7,17 @@ let articulosCarrito = [];
 //Eventos
 
 listaCursos.addEventListener('click', AgregarCurso)
+
 carrito.addEventListener('click', EliminarCurso)
+
+document.addEventListener('DOMContentLoaded',()=>{
+    // localStorage.getItem(articulosCarrito = JSON.parse('items') || [])
+    // articulosCarrito = localStorage.getItem(JSON.parse('items')) || []
+    articulosCarrito = JSON.parse(localStorage.getItem('items')) || []
+    AgregarAlHTML();
+}
+)
+
 vaciarCarrito.addEventListener('click', function(){
     articulosCarrito = [];
     LimpiarHTML();
@@ -52,7 +62,7 @@ function LeerDatosCurso(curso){
     else{
         articulosCarrito = [...articulosCarrito, infoCurso];
     }
-    console.log(articulosCarrito);
+    
     AgregarAlHTML();
 }
 
@@ -75,6 +85,14 @@ function AgregarAlHTML(){
         `
         contenidoCarrito.appendChild(row);
     })
+
+    //Sincronitation LocalStorage
+    sincroLocalStorage();
+
+}
+
+function sincroLocalStorage(){
+    localStorage.setItem('items', JSON.stringify(articulosCarrito))
 }
 
 function EliminarCurso(e)
